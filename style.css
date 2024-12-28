@@ -9,7 +9,7 @@
 /* Neutral */
 
 --dark-grayish-blue: hsl(210, 10%, 33%);
---grayish-glue: hsl(201, 11%, 66%);
+--grayish-blue: hsl(201, 11%, 66%);
 }
 
 *,
@@ -23,9 +23,10 @@ html{
     font-family: "Bai Jamjuree", serif;
 }
 body{
-
+    color: var(--grayish-blue);
 }
 h1, h2, h3{
+    color: var(--dark-grayish-blue);
     font-weight: 600;
 }
 h1{
@@ -77,6 +78,11 @@ section{
     background-color: var(--light-blue);
     box-shadow: 0 3px 1px hsl(232, 66%, 58%);
 }
+li{
+    list-style: none;
+    font-size: .875rem;
+    margin-bottom: 1.5rem;
+}
 header{
     background-image:linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255, 1)) ;
     background-image: url(./images/bg-header-mobile.png);
@@ -110,4 +116,32 @@ header{
 }
 .flex-item img{
     width: 75%;
+}
+.working-with{
+    margin-bottom: 6rem;
+}
+footer{
+    background-color: hsl(220, 18%, 97%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .logo{
+    width: 50px;
+    margin-top: 1rem;
+}
+.footer-list ul{
+    padding: 0;
+    font-size: .875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social img{
+     width: 22px;
+}
+.social img:not(img:first-child){
+    margin-left: 1.75rem;
 }
