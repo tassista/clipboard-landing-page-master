@@ -84,8 +84,9 @@ li{
     margin-bottom: 1.5rem;
 }
 header{
-    background-image:linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255, 1)) ;
-    background-image: url(./images/bg-header-mobile.png);
+    background-image:linear-gradient(rgba(255, 255, 255, 0), 90%, rgb(255, 255, 255, 1)), url(./images/bg-header-mobile.png); ;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding-block: 4.75rem 2.758rem;
 }
